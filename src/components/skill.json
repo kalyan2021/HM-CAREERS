@@ -1,0 +1,17 @@
+{
+  "Technologies":[
+    {
+        "id":1,
+        "skill":"ui developer"
+    },
+    {
+        "id":2,
+        "skill":"aws"
+    },
+
+    {
+        "id":3,
+        "skill":"power BI"
+    }
+]
+}

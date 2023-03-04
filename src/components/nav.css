@@ -1,0 +1,725 @@
+/* .header {
+  width: 100%;
+}
+
+.header_career {
+  border-left: 2px solid #d1d1d1;
+  font-size: 17px;
+  margin: 20px 29px;
+    padding-left: 19px;
+    color: #333;
+    font-weight: 700;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  display: flex !important;
+  flex-basis: auto;
+  }
+
+.navbar {
+  position: relative;
+  padding: 0.5rem 1rem ;
+  display: flex;
+  padding-left: 0 !important;
+}
+
+.navbar-brand {
+  display: inline-flex !important;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+}
+.nav-item {
+  display: flex;
+  position: relative;
+  padding-top: 5px;
+}
+
+.header_nav-link {
+  display: block;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+  line-height: 1;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: capitalize;
+  padding-top: 1px;
+  padding-bottom: 1px;  
+  border-right: 2px solid #d1d1d1;
+  list-style: none;
+}
+.pl-0 {
+  padding-left: 0 !important;
+}
+
+.navbar-nav {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 0;
+  flex-direction: row;
+}
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} 
+
+.navbar-toggler {
+  padding: 0.25rem 0.75rem;
+}
+.navbar-collapse {
+  flex-grow: 1;
+  align-items: center;
+  display: flex;
+  flex-basis: auto;
+}
+
+.ml-auto {
+  margin-left: auto !important;
+} */
+
+.header {
+    width: 100%;
+  }
+  
+  .navbar {
+    position: relative;
+    padding: .5rem 1rem
+  }
+  
+  /* .navbar {
+    position: relative;
+    padding: 0.5rem 1rem;
+  } */
+  
+  .navbar,.navbar .container,.navbar .container-fluid,.navbar .container-lg,.navbar .container-md,.navbar .container-sm,.navbar .container-xl {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between
+  }
+  
+  .container,.container-fluid,.container-lg,.container-md,.container-sm,.container-xl {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto
+  }
+  
+  .header_navItem__224B-:not(:last-child):hover>.header_navLink__3AcF_ {
+    color: #32b44b
+  }
+  
+  @media(min-width: 992px) {
+    .header_btnWeb__2U-C2 {
+        padding:8px 13px;
+        margin-left: 20px;
+        border: 1px solid #000;
+        border-radius: 5px;
+        color: #333!important;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase
+    }
+  
+    .header_btnWeb__2U-C2:hover {
+        color: #32b44b!important
+    }
+  }
+  
+  @media(min-width: 1200px) {
+    .header {
+        padding:0 65px
+    }
+  }
+  
+  
+  /* .navbar-brand {
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+  } */
+  
+  .header_navbarBrand {
+    display: inline-flex !important;
+  }
+  .logoCareer {
+    border-left: 2px solid #d1d1d1;
+    font-size: 17px;
+    margin: 20px 29px;
+    padding-left: 19px;
+    color: #333;
+    font-weight: 700;
+  }
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+  }
+  
+  .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  
+  .navbar-text {
+    display: inline-block;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  /* .navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center
+  } */
+  
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+  }
+  
+  .navbar-expand .navbar-nav .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  
+  .navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: .25rem
+  }
+  
+  .navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat 50%;
+    background-size: 100% 100%
+  }
+  
+  
+  @media (max-width: 575.98px) {
+    .navbar-expand-sm>.container,.navbar-expand-sm>.container-fluid,.navbar-expand-sm>.container-lg,.navbar-expand-sm>.container-md,.navbar-expand-sm>.container-sm,.navbar-expand-sm>.container-xl {
+        padding-right:0;
+        padding-left: 0
+    }
+  }
+  
+  @media (min-width: 576px) {
+    .navbar-expand-sm {
+        flex-flow:row nowrap;
+        justify-content: flex-start
+    }
+  }
+  
+  
+  /* .flex-column {
+    flex-direction: column;
+  } */
+  
+  .header_nav-link .active {
+    color: black;
+  }
+  
+  .header_navLink__3AcF_ {
+    display: block;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: capitalize;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-right: 2px solid #d1d1d1;
+  }
+  
+  .header_navItem__224B-:nth-last-child(2)>.header_navLink__3AcF_ {
+    border-right: none
+  }
+  
+  
+  /* .nav-item {
+    display: inline-block;
+    position: relative;
+    padding: 0.5rem;
+  } */
+  
+  /* .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+    flex-grow: 1;
+    align-items: center;
+  } */
+  
+  .header_btnWeb__2U-C2 {
+    padding: 8px 13px;
+    margin-left: 20px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    color: #333 !important;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  nav .navbar-collapse.collapse {
+    display: block;
+  }
+  
+  /* nav .navbar-collapse{
+    transition: .6s all ease-in-out;
+    height: 0 !important;
+  } */
+  
+  .navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center
+  }
+  
+  .layout_pageContainer__22CvE {
+    background-color: #fff;
+  }
+  
+  .home {
+    margin: 0px;
+    padding: 0;
+    background-color: #fff;
+  }
+  
+  .home-carousel {
+    margin: 0px;
+    padding: 0;
+  }
+  
+  .slick-prev {
+    left: -25px;
+    position: absolute;
+    font-size: 0;
+    line-height: 0;
+    top: 50%;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    transform: translate(-50%);
+    border: none;
+    outline: none;
+  }
+  
+  .button {
+    text-transform: none;
+    overflow: visible;
+  }
+  
+  .slick-list {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .slick-list,.slick-slide {
+    position: relative;
+    display: block;
+  }
+  
+  .slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* .home-carousel_singleSlide___yFps {
+    min-height: 416px;
+    background-position: bottom;
+    background-size: cover;
+  } */
+  
+  .job-search_jobSearch__ii3ti {
+    margin-top: -5px;
+    position: relative;
+    z-index: 9999;
+  }
+  
+  /* .container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  } */
+  
+  .job-search_tagSearch__24t9W {
+    padding: 54px 57px;
+    background-color: #49b6ba;
+    display: flex;
+  }
+  
+  .job-search_jobRec {
+    background: #5ac823;
+    padding: 64px 37px;
+  }
+  
+  .job-search_bulbIcon {
+    height: 40px;
+    padding-left: 4px;
+    position: relative;
+    top: -5px;
+    fill: #fff;
+  }
+  
+  .job-search_jobRec {
+    font-weight: 700;
+  }
+  
+    /* .col-xl-9,
+    .col-12,
+    .col-md-7,
+    .col-lg-8,
+    .col-sm-12 {
+      position: relative;
+      width: 100%;
+      padding-left: 15px;
+      padding-right: 31px;
+    } */
+  
+  .rbt {
+    width: 100% !important;
+  }
+  
+  .form-control {
+    display: block;
+    height: calc(1.5em + 0.75em + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+  }
+  
+  .input {
+    margin: 0px;
+  }
+  
+  .footer_container {
+    width: 100%;
+    background-color: #2f2f2f;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  
+  /* .rows {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+  } */
+  
+  .footer_title {
+    color: #82c32d;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 19px;
+    border-bottom: 1px solid #525252;
+    padding-bottom: 15px;
+  }
+  
+  a.footer_linkContent__2A3bc {
+    font-size: 15px;
+    background-color: unset;
+    color: #fff;
+    opacity: 0.5;
+    text-decoration: none;
+    padding-top: 2px;
+    margin-bottom: 7px;
+    line-height: 20px;
+    font-weight: 300;
+    text-decoration: none;
+  }
+  
+  
+  .footer_fontAwesomeIcon__2AQH9 {
+    font-size: 22px;
+  }
+  
+  /* .mr-3 {
+    margin-right: 1rem !important;
+  } */
+  
+  /* .mb-0 {
+    margin-bottom: 0 !important;
+    margin-top: 0;
+  } */
+  
+  .footer_navLink {
+    position: relative;
+  }
+  
+  /* .pl-0 {
+    padding-left: 0 !important;
+  } */
+  
+  /* .pr-0 {
+    padding-right: 0 !important;
+  } */
+  
+  /* .header_nav-link{
+    display: block;
+    padding: 0.5rem 1rem;
+  } */
+  
+  .footer {
+    position: relative;
+  }
+  
+  /* .fixed-bottom {
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  } */
+  .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  /* .footer_fontAwesomeIcon{
+    font-size: 21px;
+  } */
+  .footer_container {
+    background-color: #2f2f2f;
+    width: 100%;
+  }
+  .footer_navbar__1f_79 {
+    background-color: #252525;
+    width: 100%;
+    padding: 14px 80px;
+  }
+  
+  .footer_appVersion {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  
+  .svg-inline--fa.fa-w-14 {
+    width: 0.875rem;
+  }
+  
+  .svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    vertical-align: -0.125em;
+  }
+
+  
+
+
+  /* <div className="home">
+            <div className="home-carousel">
+
+            <div
+                className="slick-slider home-carousel_slickSlider__2JaCR slick-initialized"
+                dir="ltr"
+              >
+                <button
+                  type="button"
+                  data-role="none"
+                  class="slick-arrow slick-prev"
+                >
+                  Previous
+                </button>
+                <div class="slick-list">
+                  <div className="slick-track">
+                  </div>
+                </div>
+                <div class="home-carousel_singleSlide___yFps">
+                  <img src={slide1}></img>
+                  <div className="home-carousel_slideContent">
+                    <h2></h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <div className="job-search_jobSearch__ii3ti container-fluid">
+                <div className="row">
+                  <div className="job-search_tagSearch__24t9W col-xl-9 col-lg-8 col-md-7 col-sm-12 col-12">
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                      <div className="rbt job-search_search__3qEYA">
+                        <div>
+                          <input
+                            type="text"
+                            autocomplete="off"
+                            placeholder="Search by skills"
+                            value=""
+                            aria-autocomplete="both"
+                            aria-expanded="false"
+                            aria-haspopup="listbox"
+                            role="combobox"
+                            class="rbt-input-main form-control rbt-input"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                      <select name="experience" className="form-control">
+                        <option value="">Select Experience</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                      </select>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+                      <select name="location" className="form-control">
+                        <option value>All locations</option>
+                        <option value="BANGALORE">BANGALORE</option>
+                        <option value="CHENNAI">CHENNAI</option>
+                        <option value="PUNE">PUNE</option>
+                        <option value="Dubai">Dubai</option>
+                        <option value="USA">USA</option>
+                      </select>
+                    </div>
+                    <a class="job-search_searchIcon__2Nt4M" href="#">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="31.5"
+                        height="32.627"
+                        viewBox="0 0 31.5 32.627"
+                      >
+                        <path
+                          d="M31.021 29.718l-7.765-8.076a13.168 13.168 0 10-10.083 4.7 13.032 13.032 0 007.543-2.379l7.829 8.137a1.718 1.718 0 102.477-2.382zM13.173 3.436a9.737 9.737 0 11-9.737 9.737 9.748 9.748 0 019.737-9.737z"
+                          fill="white"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                  <div className="job-search_jobRec col-xl-3 col-lg-4 col-md-5 col-sm-12 col-12">
+                    <p class="job-search_jobRecLink__1LTrL">
+                      <a id="redirect-rec" className="text-white" >
+                        Recommend me a job
+                        <svg
+                          version="1.1"
+                          id="Capa_1"
+                          xmlns="http://www.w3.org/2000/svg"
+                          x="0px"
+                          y="0px"
+                          viewBox="0 0 508.1 508.1"
+                          class="job-search_bulbIcon"
+                        >
+                          <g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M360.05,116c-30.7-29.3-71.1-44.2-113.5-42.2c-79.7,3.8-143.9,69.3-146,149.2c-1.3,49.1,21.2,96.2,60.2,126.1 c19.2,14.7,30.6,38.7,30.6,64.2v6.6c-10.4,2.8-18.2,12.3-18.2,23.6v3.6c0,13.6,11,24.6,24.6,24.6h4.2c-0.9,2.6-1.5,5.3-1.5,8.2 v3.6c0,13.6,11,24.6,24.6,24.6h58c13.6,0,24.6-11,24.6-24.6v-3.6c0-2.9-0.6-5.6-1.5-8.2h4.2c13.6,0,24.6-11,24.6-24.6v-3.6 c0-11.3-7.7-20.8-18.2-23.6v-6.6c0-25.3,12-49.3,32.9-66c36.9-29.3,58-73.1,58-120.1C407.65,184.8,390.75,145.3,360.05,116z M291.25,483.4c0,4.5-3.7,8.2-8.2,8.2h-58c-4.5,0-8.2-3.7-8.2-8.2v-3.6c0-4.5,3.7-8.2,8.2-8.2h58c4.6,0,8.2,3.7,8.2,8.2V483.4z M318.55,443.5v3.6c0,4.5-3.7,8.2-8.2,8.2h-27.3h-58h-27.3c-4.5,0-8.2-3.7-8.2-8.2v-3.6c0-4.5,3.7-8.2,8.2-8.2h112.6 C314.85,435.3,318.55,439,318.55,443.5z M227.65,309.9h-16.8c-6.8,0-12.3-5.5-12.3-12.3v-4.5c0-6.8,5.5-12.3,12.3-12.3h4.5 c6.8,0,12.3,5.5,12.3,12.3V309.9z M244.05,418.9v-92.7h20v92.7H244.05z M339.45,334.5c-24.8,19.7-39,48.4-39,78.8v5.6h-20v-92.7 h16.8c15.8,0,28.7-12.9,28.7-28.7V293c0-15.8-12.9-28.7-28.7-28.7h-4.5c-15.8,0-28.7,12.9-28.7,28.7v16.8h-20V293 c0-15.8-12.9-28.7-28.7-28.7h-4.5c-15.8,0-28.7,12.9-28.7,28.7v4.5c0,15.8,12.9,28.7,28.7,28.7h16.8v92.7h-20v-5.6 c0-30.6-13.9-59.4-37.1-77.2c-34.8-26.7-54.9-68.8-53.8-112.7c1.9-71.3,59.2-129.8,130.4-133.2c37.9-1.8,74,11.6,101.4,37.7 c27.4,26.2,42.5,61.4,42.5,99.3C391.25,269.2,372.35,308.3,339.45,334.5z M280.45,309.9v-16.8c0-6.8,5.5-12.3,12.3-12.3h4.5 c6.8,0,12.3,5.5,12.3,12.3v4.5c0,6.8-5.5,12.3-12.3,12.3H280.45z"
+                                  stroke="white"
+                                  stroke-width="10"
+                                ></path>
+                                <rect
+                                  x="245.85"
+                                  width="16.4"
+                                  height="45.4"
+                                ></rect>
+                                <rect
+                                  x="92.166"
+                                  y="59.313"
+                                  transform="matrix(0.7071 0.7071 -0.7071 0.7071 81.3821 -61.4484)"
+                                  width="45.4"
+                                  height="16.4"
+                                ></rect>
+                                <rect
+                                  x="385.048"
+                                  y="44.861"
+                                  transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 623.543 393.4012)"
+                                  width="16.4"
+                                  height="45.4"
+                                ></rect>
+                                <rect
+                                  x="20.05"
+                                  y="198.5"
+                                  width="45.4"
+                                  height="16.4"
+                                ></rect>
+                                <rect
+                                  x="442.65"
+                                  y="198.5"
+                                  width="45.4"
+                                  height="16.4"
+                                ></rect>
+                              </g>
+                            </g>
+                          </g>
+                          <g></g>
+                          <g></g>
+                          <g></g>
+                          <g></g>
+                          <g></g>
+                          <g></g>
+                          <g></g>
+                          <g></g>
+                          <g></g>
+                          <g></g>
+                          <g></g>
+                          <g></g>
+                          <g></g>
+                          <g></g>
+                          <g></g>
+                        </svg>
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </main> */
