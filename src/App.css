@@ -17,9 +17,9 @@ html {
   width: 100%;
 }
 
-.header_navbarBrand__DfH3R {
-  display: inline-flex !important;
-}
+    .header_navbarBrand {
+    display: inline-flex !important;
+    }
 
 .logoCareer {
   border-left: 2px solid #d1d1d1;
@@ -70,6 +70,12 @@ html {
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
+  }
+}
+
+@media (min-width:1200px) {
+  .container{
+    max-width: 1536px;
   }
 }
 
@@ -467,5 +473,55 @@ a.footer_linkContent {
   }
 }
 
+.technology-info {
+    padding: 80px 0;
+    background-color: #eee;
+    position: relative;
+}
 
+.technology-info-headerTop {
+    position: absolute;
+    width: 50px;
+    height: 8px;
+    margin-top: -25px;
+    object-fit: contain;
+    background-image: -webkit-gradient(linear,left top,right top,color-stop(-33%,#ffe600),color-stop(14%,#c2d717),color-stop(96%,#39b54a));
+    background-image: linear-gradient(90deg,#ffe600 -33% #c2d717 14%, #39b54a 96%);
+}
+
+.technology-info-headerTop+h3 {
+    font-size: 35px;
+    position: relative;
+    text-transform: capitalize;
+}
+
+.technology-info-techBlock {
+    border-right: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    margin-left: -1px;
+    padding: 27px;
+    transition: all .4s ease;
+}
+
+.technology-info-techBlock .technology-info-card {
+    background-color: transparent;
+    border: none;
+}
+.technology-info-techBlock  .technology-info-card .technology-info-cardText {
+    font-size: 14px;
+    color: #2a2727;
+    margin-bottom: 23px;
+    font-weight: 600;
+    line-height: 1.33;
+    letter-spacing: .15px;
+}
+
+.technology-info-cardTitle {
+    font-weight: 400;
+    color: #202020;
+    margin-top: 0;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1.2
+}
 

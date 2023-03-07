@@ -3,7 +3,13 @@ import logo from "../images/logo.png";
 import slide1 from "../images/slider-1.jpg";
 import "../App.css";
 import TechnologyNames from "../components/skill.json";
-import ReactSlickDemo from "./slickCarousel";
+import  SlickCarousel from "./slickCarousel";
+import blockChain from '../images/block-chain.png';
+import dataScience from '../images/data-science.png';
+import devops from '../images/dev-ops.png';
+import programmableNetwork from '../images/programmable-network.png';
+import cloudComputing from '../images/cloud-computing.png';
+import iot from '../images/iot.png'
 
 function NavBar() {
   const [searchtext, setSearchtext] = useState("");
@@ -12,7 +18,7 @@ function NavBar() {
   const handleChange = (e) => {
     let searchVal = e.target.value;
     let suggestion = [];
-    const ProgLang = ["Javascript", "java", "Python", "ReactJs", "NodeJs"];
+    const ProgLang = ["Javascript", "java", "Python", "ReactJs`", "NodeJs"];
     if (searchVal.length > 0) {
       suggestion = ProgLang.sort().filter((e) => {
         return e.toLowerCase().includes(searchVal.toLowerCase());
@@ -97,7 +103,7 @@ function NavBar() {
                 <div className="header_navItem__224B- nav-item">
                   <a
                     className="header_navLink__3AcF_  header_btnWeb__2U-C2 nav-link"
-                    href="#"
+                    href="#" alt=""
                   >
                     COMPANY WEBSITE
                   </a>
@@ -108,7 +114,7 @@ function NavBar() {
         </nav>
       </header>
       <main>
-      <ReactSlickDemo/>
+      <SlickCarousel/>
 
       <div className="job-search_jobSearch container-fluid">
                 <div className="row">
@@ -255,7 +261,140 @@ function NavBar() {
                 </div>
               </div>
           
-          
+          <div className="technology-info">
+            <div className="container">
+              <div className="row">
+                <div className="text-left col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div>
+                    <span className="technology-info-headerTop"></span>
+                    <h3 className="mb-4" style={{fontWeight:'400',color:'#202020',marginTop:'0',fontStyle:'normal',lineHeight:1.2 }}>Technologies we work with</h3>
+                  </div>
+                </div>
+              </div>
+              <div className="row">
+                <div className="technology-info-techBlock col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                  <div className="technology-info-card card">
+                    <div className="card-body">
+                      <div className="row">
+                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                          <img src={blockChain} alt=""></img>
+                        </div>
+                        <div className="technology-infoMore-link col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                          <a className="on-hovr-link" href="https://www.happiestminds.com/services/blockchain-solutions-services/">
+                            More
+                            </a>
+                        </div>
+                      </div>
+                      <h3 className="technology-info-cardTitle card-title">BlockChain</h3>
+                      <p className="technology-info-cardText card-text">
+                      As Blockchain technologies continues to evolve rapidly, Happiest Mind is one of the early implementor using Hyperledger Fabric, Ethereum, R3 Corda and many others in multiple business use cases. Happiest Minds continues to stay focus in Blockchain technologies.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="technology-info-techBlock col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                  <div className="technology-info-card card">
+                    <div className="card-body">
+                      <div className="row">
+                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                          <img src={dataScience} alt=""></img>
+                        </div>
+                        <div className="technology-infoMore-link col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                          <a className="on-hovr-link" href="https://www.happiestminds.com/services/blockchain-solutions-services/">
+                            More
+                            </a>
+                        </div>
+                      </div>
+                      <h3 className="technology-info-cardTitle card-title">Data Science</h3>
+                      <p className="technology-info-cardText card-text">
+                      AI is another exciting area where deep learning is revolutionizing audio, video, image & text analysis as pre-trained models are becoming more prominent than traditional statistical models. We have specialized in developing deep learning models that work on low cost devices while continuing to build solutions that enhance the efficacy of Auto ML and Explainable AI frameworks.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="technology-info-techBlock col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                  <div className="technology-info-card card">
+                    <div className="card-body">
+                      <div className="row">
+                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                          <img src={devops} alt=""></img>
+                        </div>
+                        <div className="technology-infoMore-link col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                          <a className="on-hovr-link" href="https://www.happiestminds.com/services/blockchain-solutions-services/">
+                            More
+                            </a>
+                        </div>
+                      </div>
+                      <h3 className="technology-info-cardTitle card-title">Dev Ops</h3>
+                      <p className="technology-info-cardText card-text">
+                      It's long that Dev Ops has become main stream in Engineering process bringing Development, IT Operations and Quality Engineering together. We thrive to take Dev Ops automation to a new level, leveraging new tools and technologies like - Prometheus, Site24x7, New Relic, Kubernetes, Dockers etc.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="technology-info-techBlock col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                  <div className="technology-info-card card">
+                    <div className="card-body">
+                      <div className="row">
+                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                          <img src={programmableNetwork} alt=""></img>
+                        </div>
+                        <div className="technology-infoMore-link col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                          <a className="on-hovr-link" href="https://www.happiestminds.com/services/blockchain-solutions-services/">
+                            More
+                            </a>
+                        </div>
+                      </div>
+                      <h3 className="technology-info-cardTitle card-title">Programmable Network</h3>
+                      <p className="technology-info-cardText card-text">
+                      We at Happiest Minds are building the next generation of Programmable Networks - working on Disaggregation, containerized Networking OS development and integration of programmable platforms such as NPUs, FPGAs and popular ASICs, and virtual network functions,  programmable Data plane technologies such as DPDK and P4 , and closed loop Network Automation including Network Monitoring and Visibility, Network Analytics and Intent Driven Networks.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="technology-info-techBlock col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                  <div className="technology-info-card card">
+                    <div className="card-body">
+                      <div className="row">
+                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                          <img src={cloudComputing} alt=""></img>
+                        </div>
+                        <div className="technology-infoMore-link col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                          <a className="on-hovr-link" href="https://www.happiestminds.com/services/blockchain-solutions-services/">
+                            More
+                            </a>
+                        </div>
+                      </div>
+                      <h3 className="technology-info-cardTitle card-title">Cloud Computing</h3>
+                      <p className="technology-info-cardText card-text">
+                      We at Happiest Minds are deeply focused into 3rd wave of Internet of Things. Smart and connected devices comprises of sensors, microprocessors, edge computing, data storage, controls, cloud computing and essentially embedded operating system. We continue to bolster our capabilities and solutions by aligning ourselves with industry leading alliance partners - AWS, Azure. We also have our home grown IoT platform.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="technology-info-techBlock col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+                  <div className="technology-info-card card">
+                    <div className="card-body">
+                      <div className="row">
+                        <div className="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                          <img src={iot} alt=""></img>
+                        </div>
+                        <div className="technology-infoMore-link col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+                          <a className="on-hovr-link" href="https://www.happiestminds.com/services/blockchain-solutions-services/">
+                            More
+                            </a>
+                        </div>
+                      </div>
+                      <h3 className="technology-info-cardTitle card-title">Internet of things</h3>
+                      <p className="technology-info-cardText card-text">
+                      We at Happiest Minds are deeply focused into 3rd wave of Internet of Things. Smart and connected devices comprises of sensors, microprocessors, edge computing, data storage, controls, cloud computing and essentially embedded operating system. We continue to bolster our capabilities and solutions by aligning ourselves with industry leading alliance partners - AWS, Azure. We also have our home grown IoT platform.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
       </main>
       <footer className="footer">
