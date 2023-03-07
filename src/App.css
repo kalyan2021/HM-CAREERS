@@ -12,7 +12,10 @@ html {
   overflow-x: hidden !important;
   letter-spacing: normal;
 }
-
+/* #slide {
+  width: 200px;
+  height: 400px;
+} */
 .headerTop {
   width: 100%;
 }
@@ -33,7 +36,7 @@ html {
 .header_navItem__224B-:not(:last-child) {
   display: inline-block;
   position: relative;
-  padding-top: 5px;
+  /* padding-top: 5px; */
 }
 
 .header_navItem__224B-:not(:last-child):hover > .header_navLink__3AcF_ {
@@ -78,6 +81,8 @@ html {
     max-width: 1536px;
   }
 }
+
+
 
 .header_navItem__224B-:nth-last-child(2) > .header_navLink__3AcF_ {
   border-right: none;
@@ -201,7 +206,7 @@ html {
   border-color: rgba(0,0,0,.1)
 } */
 
-.layoutPage_Container{
+.layoutPage-container{
   background-color: #fff;
 }
 
@@ -216,11 +221,7 @@ html {
   padding: 0;
 }
 
-.home-carousel_slickSlider .home-carousel_singleSlide {
-  min-height: 416px;
-  background-position: bottom;
-  background-size: cover;
-}
+
 
 
 
@@ -231,6 +232,9 @@ html {
   border-radius: 5px;
   font-size: 13px;
   margin-left: 6px;
+}
+.slick-list {
+  height: 416px;
 }
 
 .home-carousel_slickSlider .home-carousel_slideContent > a {
@@ -523,5 +527,48 @@ a.footer_linkContent {
     font-style: normal;
     text-transform: none;
     line-height: 1.2
+}
+
+.diversity-at-work {
+  background-color: #fff;
+  padding: 80px 0;
+}
+
+
+.diversity-at-work_headerTop {
+  position: absolute;
+  width: 50px;
+  height: 8px;
+  margin-top: -25px;
+  object-fit: contain;
+  background-image: linear-gradient(90deg,#ffe600 -33%,#c2d717 14%,#39b54a 96%);
+}
+
+.diversity-at-work_header_title h3 {
+  position: relative;
+  font-size: 35px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.diversity-at-work_diversityCard {
+  position: relative;
+  display: inherit !important;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 5px !important;
+}
+.technology-infoMore-link{
+  display: none;
+  color: #272727;
+
+}
+
+
+.technology-info-techBlock .technology-info-card:hover .technology-infoMore-link {
+  display: block;
+  padding: 20px;
+  font-weight: 600;
+  color: #272727;
 }
 
