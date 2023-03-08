@@ -10,21 +10,18 @@ import devops from "../images/dev-ops.png";
 import programmableNetwork from "../images/programmable-network.png";
 import cloudComputing from "../images/cloud-computing.png";
 import iot from "../images/iot.png";
-import expand from '../images/expand.png'
-import diversity1 from '../images/diversity-1.jpg';
-import diversity2 from '../images/diversity-2.jpg';
-import diversity3 from '../images/diversity-3.jpg';
-import diversity4 from '../images/diversity-4.jpg';
-import diversity5 from '../images/diversity-5.jpg'
-import diversity6 from '../images/diversity-6.jpg'
-import diversity7 from '../images/diversity-7.jpg'
-import diversity8 from '../images/diversity-8.jpg'
-import diversity9 from '../images/diversity-9.jpg'
-import diversity10 from '../images/diversity-10.jpg';
-import diversity11 from '../images/diversity-11.jpg';
-
-
-
+import expand from "../images/expand.png";
+import diversity1 from "../images/diversity-1.jpg";
+import diversity2 from "../images/diversity-2.jpg";
+import diversity3 from "../images/diversity-3.jpg";
+import diversity4 from "../images/diversity-4.jpg";
+import diversity5 from "../images/diversity-5.jpg";
+import diversity6 from "../images/diversity-6.jpg";
+import diversity7 from "../images/diversity-7.jpg";
+import diversity8 from "../images/diversity-8.jpg";
+import diversity9 from "../images/diversity-9.jpg";
+import diversity10 from "../images/diversity-10.jpg";
+import diversity11 from "../images/diversity-11.jpg";
 
 function NavBar() {
   const [searchtext, setSearchtext] = useState("");
@@ -101,7 +98,7 @@ function NavBar() {
                   </a>
                 </div>
                 <div class="header_navItem__224B- header_navItemBorder__27x7D nav-item">
-                  <a class="header_navLink__3AcF_ nav-link" href="#">
+                  <a class="header_navLink__3AcF_ nav-link" href="./currentopenings.js">
                     Current Openings
                   </a>
                 </div>
@@ -148,10 +145,15 @@ function NavBar() {
                         value={searchtext}
                         onChange={handleChange}
                         aria-autocomplete="both"
+                        aria-expandeded="true"
+                        aria-haspopup="listbox"
+                        role="combobox"
+                        aria-owns="search"
                         class="rbt-input-main form-control rbt-input"
                       />
                       {getSuggestions()}
                     </div>
+                    {/* <div aria-label="menu-options" className="rbt-menu dropdown-menu show" id="search" role="listbox"></div> */}
                   </div>
                 </div>
                 <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
@@ -495,15 +497,28 @@ function NavBar() {
                   <div className="diversity-at-work_header_title">
                     <span className="diversity-at-work_headerTop"></span>
                     <h3 className="mb-4">Diversity@Work</h3>
-                    <h5 className="mb-4"><b>Our Commitment</b></h5>
+                    <h5 className="mb-4">
+                      <b>Our Commitment</b>
+                    </h5>
                     <p>
-                    Inclusion and diversity are fundamental to a culture and core values. At Happiest Minds, we strive to ensure that everyone can retain their identity that reflects their cultural experiences and feelings. We believe that no one should be discriminated against because of their differences, such as age, ability, ethnicity, gender, expression or religion.
+                      Inclusion and diversity are fundamental to a culture and
+                      core values. At Happiest Minds, we strive to ensure that
+                      everyone can retain their identity that reflects their
+                      cultural experiences and feelings. We believe that no one
+                      should be discriminated against because of their
+                      differences, such as age, ability, ethnicity, gender,
+                      expression or religion.
                     </p>
                     <p>
-                    Diversity makes us stronger, more innovative, more competitive and more creative, which helps us better serve our clients and our communities. This resonates with our mission statement: Happiest People. Happiest Customers.
+                      Diversity makes us stronger, more innovative, more
+                      competitive and more creative, which helps us better serve
+                      our clients and our communities. This resonates with our
+                      mission statement: Happiest People. Happiest Customers.
                     </p>
                     <p>
-                    We remain committed to an inclusive and diverse workplace, where people can be who they are and be their best, professionally and personally.
+                      We remain committed to an inclusive and diverse workplace,
+                      where people can be who they are and be their best,
+                      professionally and personally.
                     </p>
                   </div>
                 </div>
@@ -513,7 +528,12 @@ function NavBar() {
                       <div className="diversity-at-work_diversityCard card">
                         <img className="card-img-top" src={diversity1}></img>
                         <div className="diversity-at-work_portfolioContent">
-                          <img width="20px" height="20px" src={expand} alt="Expand"></img>
+                          <img
+                            width="20px"
+                            height="20px"
+                            src={expand}
+                            alt="Expand"
+                          ></img>
                         </div>
                       </div>
                     </div>
@@ -521,7 +541,12 @@ function NavBar() {
                       <div className="diversity-at-work_diversityCard card">
                         <img className="card-img-top" src={diversity2}></img>
                         <div className="diversity-at-work_portfolioContent">
-                          <img width="20px" height="20px" src={expand} alt="Expand"></img>
+                          <img
+                            width="20px"
+                            height="20px"
+                            src={expand}
+                            alt="Expand"
+                          ></img>
                         </div>
                       </div>
                     </div>
@@ -529,7 +554,12 @@ function NavBar() {
                       <div className="diversity-at-work_diversityCard card">
                         <img className="card-img-top" src={diversity3}></img>
                         <div className="diversity-at-work_portfolioContent">
-                          <img width="20px" height="20px" src={expand} alt="Expand"></img>
+                          <img
+                            width="20px"
+                            height="20px"
+                            src={expand}
+                            alt="Expand"
+                          ></img>
                         </div>
                       </div>
                     </div>
@@ -537,7 +567,12 @@ function NavBar() {
                       <div className="diversity-at-work_diversityCard card">
                         <img className="card-img-top" src={diversity4}></img>
                         <div className="diversity-at-work_portfolioContent">
-                          <img width="20px" height="20px" src={expand} alt="Expand"></img>
+                          <img
+                            width="20px"
+                            height="20px"
+                            src={expand}
+                            alt="Expand"
+                          ></img>
                         </div>
                       </div>
                     </div>
@@ -545,7 +580,12 @@ function NavBar() {
                       <div className="diversity-at-work_diversityCard card">
                         <img className="card-img-top" src={diversity5}></img>
                         <div className="diversity-at-work_portfolioContent">
-                          <img width="20px" height="20px" src={expand} alt="Expand"></img>
+                          <img
+                            width="20px"
+                            height="20px"
+                            src={expand}
+                            alt="Expand"
+                          ></img>
                         </div>
                       </div>
                     </div>
@@ -553,7 +593,12 @@ function NavBar() {
                       <div className="diversity-at-work_diversityCard card">
                         <img className="card-img-top" src={diversity6}></img>
                         <div className="diversity-at-work_portfolioContent">
-                          <img width="20px" height="20px" src={expand} alt="Expand"></img>
+                          <img
+                            width="20px"
+                            height="20px"
+                            src={expand}
+                            alt="Expand"
+                          ></img>
                         </div>
                       </div>
                     </div>
@@ -561,7 +606,12 @@ function NavBar() {
                       <div className="diversity-at-work_diversityCard card">
                         <img className="card-img-top" src={diversity7}></img>
                         <div className="diversity-at-work_portfolioContent">
-                          <img width="20px" height="20px" src={expand} alt="Expand"></img>
+                          <img
+                            width="20px"
+                            height="20px"
+                            src={expand}
+                            alt="Expand"
+                          ></img>
                         </div>
                       </div>
                     </div>
@@ -569,7 +619,12 @@ function NavBar() {
                       <div className="diversity-at-work_diversityCard card">
                         <img className="card-img-top" src={diversity8}></img>
                         <div className="diversity-at-work_portfolioContent">
-                          <img width="20px" height="20px" src={expand} alt="Expand"></img>
+                          <img
+                            width="20px"
+                            height="20px"
+                            src={expand}
+                            alt="Expand"
+                          ></img>
                         </div>
                       </div>
                     </div>
@@ -577,7 +632,12 @@ function NavBar() {
                       <div className="diversity-at-work_diversityCard card">
                         <img className="card-img-top" src={diversity9}></img>
                         <div className="diversity-at-work_portfolioContent">
-                          <img width="20px" height="20px" src={expand} alt="Expand"></img>
+                          <img
+                            width="20px"
+                            height="20px"
+                            src={expand}
+                            alt="Expand"
+                          ></img>
                         </div>
                       </div>
                     </div>
@@ -585,23 +645,56 @@ function NavBar() {
                       <div className="diversity-at-work_diversityCard card">
                         <img className="card-img-top" src={diversity10}></img>
                         <div className="diversity-at-work_portfolioContent">
-                          <img width="20px" height="20px" src={expand} alt="Expand"></img>
+                          <img
+                            width="20px"
+                            height="20px"
+                            src={expand}
+                            alt="Expand"
+                          ></img>
                         </div>
                       </div>
                     </div>
                     <div className="d-block col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12">
-                    <div className="diversity-at-work_diversityCard card">
-                      <div className="diversity-at-work_wrapper">
-                      <div className="diversity-at-work_icon">
-                        <i className="fa fa-play-circle-o" aria-hidden=''></i>
-                      </div>
-                        <img className="card-img-top" src={diversity11}></img>
-                        <div className="diversity-at-work_portfolioContent">
-                          <img width="20px" height="20px" src={expand} alt="Expand"></img>
+                      <div className="diversity-at-work_diversityCard card">
+                        <div className="diversity-at-work_wrapper">
+                          <div className="diversity-at-work_icon">
+                            <i
+                              className="fa fa-play-circle-o"
+                              aria-hidden=""
+                            ></i>
+                          </div>
+                          <img className="card-img-top" src={diversity11}></img>
+                          <div className="diversity-at-work_portfolioContent">
+                            <img
+                              width="20px"
+                              height="20px"
+                              src={expand}
+                              alt="Expand"
+                            ></img>
+                          </div>
                         </div>
                       </div>
-                      </div>
                     </div>
+                  </div>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-12">
+                  <div className="diversity-at-work_portfolioMenu mt-2 mb-2">
+                    <button className="diversity-at-work_active">
+                      All
+                      <span className="diversity-at-work_line"></span>
+                    </button>
+                    <button className="">
+                      Photos
+                      <span className="diversity-at-work_line"></span>
+                    </button>
+                    <button>Video</button>
+                  </div>
+                </div>
+                <div className="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-12">
+                  <div className="diversity-at-work_enlargePhoto text-right mt-2 mb-2">
+                    Click on photos to enlarge
                   </div>
                 </div>
               </div>

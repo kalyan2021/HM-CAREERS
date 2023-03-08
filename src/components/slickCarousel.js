@@ -65,6 +65,9 @@ class SimpleSlider extends Component {
       <Slider {...settings}>
         <div>
           <img src={slider1} style={{width:'100%'}}/>
+          <div className="home-carousel_slideContent">
+           <h2 className="home-carousel_heading_animation">Culture</h2>
+          </div>
         </div>
         <div>
           <img src={slider2} style={{width:'100%'}}/>

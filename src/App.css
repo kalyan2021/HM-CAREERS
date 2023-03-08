@@ -237,6 +237,17 @@ html {
   height: 416px;
 }
 
+.slick-dots {
+  position: absolute;
+  bottom: 6px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: right;
+  z-index: 999;
+  right: 0px;
+}
+
 .home-carousel_slickSlider .home-carousel_slideContent > a {
   color: #fff;
   -webkit-transition-delay: 5s;
@@ -489,8 +500,8 @@ a.footer_linkContent {
     height: 8px;
     margin-top: -25px;
     object-fit: contain;
-    background-image: -webkit-gradient(linear,left top,right top,color-stop(-33%,#ffe600),color-stop(14%,#c2d717),color-stop(96%,#39b54a));
-    background-image: linear-gradient(90deg,#ffe600 -33% #c2d717 14%, #39b54a 96%);
+    background-image: linear-gradient(90deg,#ffe600 -33%,#c2d717 14%,#39b54a 96%);
+
 }
 
 .technology-info-headerTop+h3 {
@@ -558,6 +569,31 @@ a.footer_linkContent {
   overflow: hidden;
   border-radius: 5px !important;
 }
+
+.diversity-at-work_diversityCard .diversity-at-work_portfolioContent {
+  position: absolute;
+  bottom: 0;
+  right: o;
+  text-align: left;
+  transform: translateZ(20px);
+  transition: .3s;
+  opacity: 0;
+  z-index: 2;
+  height: 100%;
+  align-content: end;
+  display: grid;
+  padding: 9px;
+  width: 100%;
+}
+
+.diversity-at-work_diversityCard:hover.diversity-at-work_portfolioContent{
+  opacity: 1;
+}
+
+.diversity-at-work_diversityCard:hover{
+  cursor: pointer;
+}
+
 .technology-infoMore-link{
   display: none;
   color: #272727;
@@ -572,3 +608,35 @@ a.footer_linkContent {
   color: #272727;
 }
 
+
+
+
+.diversity-at-work_portfolioMenu .diversity-at-work_active{
+  color: #000;
+}
+
+.diversity-at-work_portfolioMenu button {
+  background: none;
+  border: none;
+  font-size: 15px;
+  padding: 0;
+  margin: 0 20px 0 0;
+  position: relative;
+  display: inline-flex;
+  font-weight: 700;
+
+}
+
+
+.diversity-at-work_portfolioMenu .diversity-at-work_line {
+  background: #888;
+  width: 1px;
+  height: 26px;
+  position: absolute;
+  margin-left: 14px;
+  right: -12px; 
+}
+
+.diversity-at-work_enlargePhoto {
+  font-weight: 600;
+}
