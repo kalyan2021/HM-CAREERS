@@ -59,14 +59,23 @@ class SimpleSlider extends Component {
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
+      adaptiveHeight:false,
+      centerPadding: '60px',
       autoplay: true,
+      arrows:true
     };
     return (
       <Slider {...settings}>
         <div>
           <img src={slider1} style={{width:'100%'}}/>
           <div className="home-carousel_slideContent">
-           <h2 className="home-carousel_heading_animation">Culture</h2>
+           <h2 className="home-carousel_heading_animation">Culture
+           {/* <br>
+           <div className="home-carousel_content">
+            Our Mission is simple - Happiest People . Happiest Customers
+            </div></br> */}
+           </h2>
+           <a href="/life-work">View Openings</a>
           </div>
         </div>
         <div>
