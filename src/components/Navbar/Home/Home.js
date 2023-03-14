@@ -122,7 +122,9 @@ export default function Home() {
                         />
                         {getSuggestions()}
                         </div>
-                        {/* <div aria-label="menu-options" className="rbt-menu dropdown-menu show" id="search" role="listbox"></div> */}
+                        {/* <div aria-label="menu-options" className="rbt-menu dropdown-menu show" id="search" role="listbox"
+                         style={{position:"absolute", display:"block",maxHeight:"300px",overflow:"auto",willChange:"transform",width:"311.4px",top:"0px",left:"0px",transform:"translate3d(0px, 33px, 0px)"}}
+                         ></div> */}
                     </div>
                     </div>
                     <div className="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">

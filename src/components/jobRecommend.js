@@ -35,6 +35,11 @@ export default function JobRecommend() {
                     </div>
                 </div>
               </div>
+              <div className='job-recommender-contentReco mt-5 mt-sm-0 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12'>
+                <div className='job-recommender-contentTitle'>How Job Recommender Works?</div>
+                <p className='job-recommender-content'>The job recommender is an AI powered feature which suggests job opportunities based on your resume.</p>
+                <p className='job-recommender-content'>You just need to upload your resume and our recommender engine will scan your resume and suggest suitable job opportunities for you.</p>
+              </div>
             </div>
         </div>
     </div>

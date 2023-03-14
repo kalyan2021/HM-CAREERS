@@ -718,6 +718,7 @@ a.footer-linkContent {
   font-size: 14px;
 }
 
+
 .job-search_dropdown {
   line-height: 2.5;
   display: flex;
@@ -832,4 +833,19 @@ a.footer-linkContent {
   border: none;
   outline: none;
   position: relative;
+}
+
+.job-recommender-contentTitle {
+  color: #82c62e;
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.job-recommender-content{
+  font-size: 15px;
+  color: #2a2727;
+  margin-bottom: 23px;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: .15px;
 }
