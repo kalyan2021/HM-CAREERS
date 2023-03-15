@@ -1,0 +1,16 @@
+ [{
+    "id": 1,
+    "pic": "../images/block-chain.png",
+    "caption": "Image 1"
+},
+{
+    "id": 2,
+    "pic": "../images/cloud-computing.png",
+    "caption": "Image 2 "
+},
+{
+    "id": 3,
+    "pic": "../images/data-science.png",
+    "caption": "Image 3"
+}
+]

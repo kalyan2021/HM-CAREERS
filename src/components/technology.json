@@ -1,0 +1,28 @@
+
+
+[
+    {
+        "id": 1,
+        "Title": "Blockchain",
+        "content": "As Blockchain technologies continues to evolve rapidly, Happiest Mind is one of the early implementor using Hyperledger Fabric, Ethereum, R3 Corda and many others in multiple business use cases. Happiest Minds continues to stay focus in Blockchain technologies."
+    }, 
+    
+    {
+        "id": 2,
+        "Title": "Data Science",
+        "content": "AI is another exciting area where deep learning is revolutionizing audio, video, image & text analysis as pre-trained models are becoming more prominent than traditional statistical models. We have specialized in developing deep learning models that work on low cost devices while continuing to build solutions that enhance the efficacy of Auto ML and Explainable AI frameworks."
+    },
+
+    {
+        "id": 3,
+        "Title": "DevOps",
+        "content": "It's long that Dev Ops has become main stream in Engineering process bringing Development, IT Operations and Quality Engineering together. We thrive to take Dev Ops automation to a new level, leveraging new tools and technologies like - Prometheus, Site24x7, New Relic, Kubernetes, Dockers etc."
+    },
+
+    {
+        "id": 4,
+        "Title": "Programmable Network",
+        "content": "We at Happiest Minds are building the next generation of Programmable Networks - working on Disaggregation, containerized Networking OS development and integration of programmable platforms such as NPUs, FPGAs and popular ASICs, and virtual network functions,  programmable Data plane technologies such as DPDK and P4 , and closed loop Network Automation including Network Monitoring and Visibility, Network Analytics and Intent Driven Networks."
+    }
+]
+

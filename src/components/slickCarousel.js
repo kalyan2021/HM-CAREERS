@@ -4,13 +4,12 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a lo
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import slider1 from "../images/slider-1.jpg";
+import slider2 from "../images/slider-2.jpg";
+import slider3 from "../images/slider-3.jpg";
+import slider4 from "../images/slider-4.jpg";
+import Records from "./Carousel.json"
 
-
-import {Carousel} from 'react-responsive-carousel';
-import slider1 from "../images/slider-1.jpg"
-import slider2 from "../images/slider-2.jpg"
-import slider3 from "../images/slider-3.jpg"
-import slider4 from "../images/slider-4.jpg"
 
 
 
@@ -63,56 +62,20 @@ class SimpleSlider extends Component {
       centerPadding: '60px',
       autoplay: true,
       arrows:true,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-            dots: true
-          }
-        },
-        {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            initialSlide: 2
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-      ]
     };
     return (
       <Slider {...settings}>
-        <div>
-          <img src={slider1} style={{width:'100%'}}/>
-          <div className="home-carousel_slideContent">
-           <h2 className="home-carousel_heading_animation">Culture
-           {/* <br>
-           <div className="home-carousel_content">
-            Our Mission is simple - Happiest People . Happiest Customers
-            </div></br> */}
-           </h2>
-           <a href="/life-work">View Openings</a>
-          </div>
-        </div>
-        <div>
-          <img src={slider2} style={{width:'100%'}}/>
-        </div>
-        <div>
-          <img src={slider3} style={{width:'100%'}}/>
-        </div>
-        <div>
-          <img src={slider4} style={{width:'100%'}}/>
-        </div>
+        {
+          Records && Records.map( record =>{
+            return(
+              <div key={record.id}>
+                <img src={record.pic}/>
+                <br />
+                {record.caption}
+              </div>
+            )
+          })
+        }
       </Slider>
     );
   }

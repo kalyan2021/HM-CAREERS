@@ -21,6 +21,8 @@ import diversity10 from "../../../images/diversity-10.jpg";
 import diversity11 from "../../../images/diversity-11.jpg";
 import SimpleSlider from '../../slickCarousel';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
+import ImageSlider from '../../slick';
+import images from '../../Carousel';
 
 export default function Home() {
     const [searchtext, setSearchtext] = useState("");
@@ -98,7 +100,7 @@ export default function Home() {
         <main className="layoutPage-container">
             <div className="home">
             <div className="home-carousel">
-                <SimpleSlider />
+                <SimpleSlider/>
 
             </div>
 
