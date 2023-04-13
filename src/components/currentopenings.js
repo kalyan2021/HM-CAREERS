@@ -1,18 +1,13 @@
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
-import searchIcon from '../images/search.svg'
+import searchIcon from '../components/Images/search.svg'
 
 export default function CurrentOpenings(props) {
-    const {location} = useLocation();
+    // const {location} = useLocation();
     //console.log(location, " useLocation Hook");
-    const data = location.state?.data;
-    console.log([props])
+    // const data = location.state?.data;
+    // console.log([props])
     return (
-        <div
-        className="container"
-        style={{ backgroundColor: "rgb(238, 238, 238)" }}
-        >
-            {data}
         <div className="undefined pt-4 pb-4">
             <h3 className="job-list-title-head">Current Openings</h3>
             <div className="job-search animate_animated animate_fadeInUp mt-2 row">
@@ -91,7 +86,6 @@ export default function CurrentOpenings(props) {
                 <button id="reset" type="submit" className="job-search-reset-btn">RESET</button>
             </div>
             </div>
-        </div>
         </div>
     );
 }

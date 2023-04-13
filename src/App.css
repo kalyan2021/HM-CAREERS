@@ -576,6 +576,10 @@ a.footer-linkContent {
   letter-spacing: 0.15px;
 }
 
+.technology-info-techBlock img {
+  margin: 10px 0 27px;
+}
+
 .technology-info-cardTitle {
   font-weight: 400;
   color: #202020;

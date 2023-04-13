@@ -4,11 +4,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a lo
 import Slider from "react-slick"
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import slider1 from "../images/slider-1.jpg";
-import slider2 from "../images/slider-2.jpg";
-import slider3 from "../images/slider-3.jpg";
-import slider4 from "../images/slider-4.jpg";
-import Records from "./Carousel.json"
+import slicimg from "./Carousel.json"
 
 
 
@@ -66,12 +62,12 @@ class SimpleSlider extends Component {
     return (
       <Slider {...settings}>
         {
-          Records && Records.map( record =>{
+          slicimg && slicimg.map( slicks =>{
             return(
-              <div key={record.id}>
-                <img src={record.pic}/>
+              <div className="home-carousel" key={slicks.id}>
+                <img src={slicks.pic}/>
                 <br />
-                {record.caption}
+                {slicks.caption}
               </div>
             )
           })

@@ -1,5 +1,5 @@
 import React from 'react'
-import fileUpload from '../images/fileUpload.svg'
+import fileUpload from './Images/fileUpload.svg'
 
 export default function JobRecommend() {
   return (
